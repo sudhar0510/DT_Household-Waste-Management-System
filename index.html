@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Earth-Themed Waste Management Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <h1><i class="fas fa-globe-americas"></i> Household Waste Management System</h1>
+            <p>Make a positive impact on the Earth by managing waste sustainably.</p>
+            <button id="play-voice-note">Play Voice Note</button>
+        </header>
+
+        <div class="main-container">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#overview"><i class="fas fa-globe"></i> Overview</a></li>
+                    <li><a href="#charts"><i class="fas fa-chart-pie"></i> Charts</a></li>
+                    <li><a href="#tips"><i class="fas fa-lightbulb"></i> Waste Tips</a></li>
+                    <li><a href="#facts"><i class="fas fa-recycle"></i> Waste Facts</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <!-- Overview Section -->
+                <section id="overview">
+                    <h2><i class="fas fa-seedling"></i> Overview</h2>
+                    <div class="overview-cards">
+                        <div class="card">
+                            <h3><i class="fas fa-trash-alt"></i> Total Waste Produced</h3>
+                            <p>200 kg/month</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-recycle"></i> Recycled Waste</h3>
+                            <p>50 kg/month</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-seedling"></i> Composted Waste</h3>
+                            <p>30 kg/month</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Charts Section -->
+                <section id="charts">
+                    <h2>Waste Statistics Charts</h2>
+                    <div class="chart-container">
+                        <canvas id="wasteTypesChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="monthlyWasteChart"></canvas>
+                    </div>
+                </section>
+
+                <!-- Waste Tips Section -->
+                <section id="tips">
+                    <h2>Waste Management Tips</h2>
+                    <button id="read-tips">Read Aloud Tips</button>
+                    <ul>
+                        <li>Separate recyclables from non-recyclables.</li>
+                        <li>Compost food waste to reduce landfill contribution.</li>
+                        <li>Minimize the use of single-use plastics.</li>
+                        <li>Donate items you no longer need.</li>
+                        <li>Consider purchasing products with minimal packaging.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 Household Waste Management Dashboard</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://organicabiotech.com/wp-content/uploads/2021/07/solid-waste-min.jpg') no-repeat center center fixed; /* Replace with your image URL */
+    background-size: cover;
+    color: #ffffff;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+    z-index: -1;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 128, 102, 0.7); /* Semi-transparent dark green */
+    color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease;
+}
+
+header h1 {
+    font-size: 36px;
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    animation: bounceIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.8); }
+    60% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background-color: rgba(0, 77, 64, 0.85); /* Dark green with transparency */
+    color: Black;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    background-color: rgba(128, 203, 196, 0.7); /* Light teal on hover */
+    transform: scale(1.05);
+}
+
+/* Main Content */
+.main-container {
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85); /* Light, transparent background for content readability */
+    border-radius: 8px;
+}
+
+/* Waste Management Tips Section */
+#tips ul {
+    color: black; /* Set text color to black */
+}
+
+#tips button {
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#tips button:hover {
+    background-color: #45a049;
+}
+
+/* Overview Card */
+.card {
+    background-color: rgba(255, 255, 255, 0.7); /* Light transparent white */
+    color: Black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 3px solid #80cbc4; /* Accent color */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Chart Container */
+.chart-container {
+    margin: 20px 0;
+    position: relative;
+    height: 400px;
+    background-color: rgba(232, 245, 233, 0.85); /* Light transparent green background */
+    border-radius: 8px;
+    padding: 20px;
+    animation: grow 1s ease;
+}
+
+@keyframes grow {
+    from { transform: scaleY(0); }
+    to { transform: scaleY(1); }
+}
+
+h2 {
+    color: #80cbc4;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 77, 64, 0.85);
+    color: White;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
